@@ -1,0 +1,35 @@
+[
+    {
+        "experienciasDestacables": [
+            {
+                "empresa": "Pryx",
+                "descripcion": "Practica Profesional I desarrollando páginas web",
+                "logo": "https://pryx.cl/wp-content/uploads/2021/09/Recurso-20@4x-300x107.png"
+            },
+            {
+                "empresa": "Pryx",
+                "descripcion": "Practica Profesional II desarrollando páginas web y aplicaciones moviles",
+                "logo": "https://pryx.cl/wp-content/uploads/2021/09/Recurso-20@4x-300x107.png"
+            }
+        ]
+    },
+    {
+        "trabajosFormales": [
+            {
+                "empresa": "MIBO",
+                "descripcion": "Apoyo en certificaciones para empresas y que estas puedan emitir boletas mediante SII",
+                "logo": "https://mibo.cl/homepage/images/mibo.png"
+            },
+            {
+                "empresa": "UBB",
+                "descripcion": "Ayudantias para Ingeniería Civil Informática en la asignatura de Ingeniería de Software",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Escudo_Universidad_del_B%C3%ADo-B%C3%ADo.png"
+            },
+            {
+                "empresa": "UBB",
+                "descripcion": "Ayudantias para Ingeniería Ejecución Informática en la asignatura de Ingeniería de Software",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Escudo_Universidad_del_B%C3%ADo-B%C3%ADo.png"
+            }
+        ]
+    }
+]

@@ -1,19 +1,35 @@
 import React from 'react'
-import { Box, Button, Grid, Text, Container, Heading, HStack, Image, Stack, Link } from '@chakra-ui/react'
+import { Box, Button, Grid, Text, Container, Heading, HStack, Image, Stack, Link, Wrap, WrapItem, VStack } from '@chakra-ui/react'
 import foto from '../static/image.jpeg'
 import { FaLinkedin, FaGithub, FaReact, FaNodeJs, FaGitAlt, FaPhp, FaCss3, FaHtml5 } from 'react-icons/fa'
 import { SiNextdotjs, SiExpress, SiMongodb, SiMysql, SiChakraui, SiJavascript } from 'react-icons/si'
+import Empresas from '../components/Empresas'
+import experiencias from '../static/experiencias.json'
 
 const Inicio = () => {
 
-    const tecnologias = [[FaReact, 'React'], [SiNextdotjs, 'Next.js'], [FaNodeJs, 'Node.js'], [SiExpress, 'Express'], [SiMongodb, 'MongoDB'], [SiMysql, 'MySQL'], [FaGitAlt, 'Git'], [FaPhp, 'PHP'], [FaCss3, 'CSS'], [FaHtml5, 'HTML'], [SiChakraui, 'Chakra UI'], [SiJavascript, 'JavaScript']]
+    const experienciasDestacables = experiencias[0].experienciasDestacables.map((experiencia, index) => {
+        return (
+            <WrapItem>
+                <Empresas key={index} logo={experiencia.logo} empresa={experiencia.empresa} descripcion={experiencia.descripcion} />
+            </WrapItem>
+        )
+    })
+
+    const trabajosFormales = experiencias[1].trabajosFormales.map((experiencia, index) => {
+        return (
+            <WrapItem>
+                <Empresas key={index} logo={experiencia.logo} empresa={experiencia.empresa} descripcion={experiencia.descripcion} />
+            </WrapItem>
+        )
+    })
 
     const sendTo = (url) => {
         window.open(url, '_blank')
     }
 
     return (
-        <Container maxW={"container.lg"} >
+        <Container maxW={"container.lg"}>
             <Box py={10}>
                 <Heading as={"h1"} fontSize={"4xl"} color={"white"} textAlign="center">Ignacio González</Heading>
                 <HStack>
@@ -25,7 +41,7 @@ const Inicio = () => {
                             <Link onClick={() => sendTo('https://github.com/Xhyus')}><FaGithub size={30} color={'white'} /></Link>
                         </HStack>
                     </Stack>
-                    <Box >
+                    <Box>
                         <Heading as={"h2"} fontSize={"2xl"} color={"white"}>Sobre mí</Heading>
                         <Stack>
                             <Text fontWeight={"semibold"} color={"white"}>Estudiante de último semestre de Ingeniería en Ejecución Informática de la Universidad del Bío-Bío, con ganas de siempre aprender algo nuevo o mejorando las cosas que sé, entusiasta, autodidacta y analítico.</Text>
@@ -35,11 +51,10 @@ const Inicio = () => {
                         </Stack>
                     </Box>
                 </HStack>
-                <Heading>Tengo conocimientos en las siguientes tecnologias:</Heading>
+                <Heading color={"white"}>Tengo conocimientos en las siguientes tecnologias:</Heading>
                 <HStack>
                     <Box>
                         <HStack>
-
                             {tecnologias.map((tecnologia, index) => {
                                 return (
                                     <HStack key={index}>
@@ -49,9 +64,22 @@ const Inicio = () => {
                             }
                             )}
                         </HStack>
-
                     </Box>
                 </HStack>
+                <VStack>
+                    <Heading textAlign={"center"} color="white" p={5}>Experiencia Destacables</Heading>
+                    <HStack w={'full'} h={"full"} mt={5}>
+                        <Wrap>
+                            {experienciasDestacables}
+                        </Wrap>
+                    </HStack>
+                    <Heading color={"white"} textAlign={"center"} p={5}>Trabajos formales</Heading>
+                    <HStack w={'full'} mt={5} h={"full"}>
+                        <Wrap>
+                            {trabajosFormales}
+                        </Wrap>
+                    </HStack>
+                </VStack>
 
             </Box>
         </Container >
