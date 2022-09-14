@@ -1,7 +1,7 @@
 import React from 'react'
-import { Box, Text, Container, Heading, HStack, Image, Stack, Link, Wrap, WrapItem, VStack } from '@chakra-ui/react'
+import { Box, Text, Container, Heading, HStack, Image, Stack, Link, Wrap, WrapItem, VStack, Button, Tag } from '@chakra-ui/react'
 import foto from '../static/image.jpeg'
-import { FaLinkedin, FaGithub } from 'react-icons/fa'
+import { FaLinkedin, FaGithub, FaReact } from 'react-icons/fa'
 import Empresas from '../components/Empresas'
 import experiencias from '../static/experiencias.json'
 import Tecnologias from '../components/Tecnologias'
@@ -24,10 +24,6 @@ const Inicio = () => {
         )
     })
 
-    const sendTo = (url) => {
-        window.open(url, '_blank')
-    }
-
     return (
         <Container maxW={"container.lg"}>
             <Box py={10}>
@@ -37,8 +33,8 @@ const Inicio = () => {
                         <Image src={foto} width={500} borderRadius={'full'} border={'2px'} borderColor={'gray.300'} alt="Segun Adebayo" />
                         <Text color={"white"} fontWeight={"bold"}>Desarrollador Web</Text>
                         <HStack justify={"center"}>
-                            <Link onClick={() => sendTo('https://www.linkedin.com/in/ignacio-gonz%C3%A1lez-468359218/')}><FaLinkedin size={30} color={'white'} /></Link>
-                            <Link onClick={() => sendTo('https://github.com/Xhyus')}><FaGithub size={30} color={'white'} /></Link>
+                            <Link href='https://www.linkedin.com/in/ignacio-gonz%C3%A1lez-468359218/' isExternal><FaLinkedin size={30} color={'white'} /></Link>
+                            <Link href='https://github.com/Xhyus' isExternal><FaGithub size={30} color={'white'} /></Link>
                         </HStack>
                     </Stack>
                     <Box>
@@ -53,6 +49,7 @@ const Inicio = () => {
                         </Stack>
                     </Box>
                 </HStack>
+
                 <VStack>
                     <Heading textAlign={"center"} color="white" p={5}>Experiencia Destacables</Heading>
                     <HStack w={'full'} h={"full"} mt={5}>
@@ -67,8 +64,38 @@ const Inicio = () => {
                         </Wrap>
                     </HStack>
                 </VStack>
+                <Heading fontWeight={"bold"} color="white" textAlign={"center"} p={5}>Tecnologías</Heading>
                 <Tecnologias />
-            </Box>
+                <Heading fontWeight={"bold"} color="white" textAlign={"center"} p={5}>Proyectos</Heading>
+                <Stack bgColor={"white"} border={1} borderRadius={20} m={5} p={5} w={"container.sm"}>
+                    <HStack >
+                        <VStack >
+                            <Image src={foto} w={20} />
+                            <HStack>
+                                <Link href="Linguaskill.pdf" isExternal><FaGithub /></Link>
+                                <Link href="https://www.github.com/Xhyus" isExternal>Ir</Link>
+                            </HStack>
+                        </VStack>
+                        <VStack>
+                            <Text fontWeight={"bold"}>Portafolio</Text>
+                            <Text>Descripción del proyecto llamado portafolio y porque fue realizado</Text>
+                        </VStack>
+                    </HStack>
+                    <HStack>
+                        <Wrap>
+                            <WrapItem>
+                                <Tag w={"fit-content"}>React</Tag>
+                            </WrapItem>
+                            <WrapItem>
+                                <Tag w={"fit-content"}>ChakraUI</Tag>
+                            </WrapItem>
+                            <WrapItem>
+                                <Tag w={"fit-content"}>JavaScript</Tag>
+                            </WrapItem>
+                        </Wrap>
+                    </HStack>
+                </Stack>
+            </Box >
         </Container >
     )
 }

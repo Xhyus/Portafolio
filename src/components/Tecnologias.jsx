@@ -1,20 +1,33 @@
-import tecnologias from '../static/tecnologias.json'
 import React from 'react'
-import { Text, HStack, VStack, Heading, Wrap, WrapItem, Icon } from '@chakra-ui/react'
+import { Text, HStack, VStack, Heading, Wrap, WrapItem, Icon, Center } from '@chakra-ui/react'
+import { FaReact, FaNodeJs, FaGitAlt, FaPhp, FaCss3, FaHtml5, FaGithub } from 'react-icons/fa'
+import { SiNextdotjs, SiExpress, SiMongodb, SiMysql, SiChakraui, SiJavascript } from 'react-icons/si'
+
+const Iconos = ({ icon, tecnologia }) => {
+    return (
+        <WrapItem >
+            <Icon color={"white"} as={icon} w={14} h={14} mx={4} />
+        </WrapItem>
+    )
+}
 
 const Tecnologias = () => {
     return (
         <VStack>
-            <Heading fontWeight={"bold"} color="white">Tecnologías</Heading>
             <Wrap>
-                {tecnologias.map((tecnologia, index) => (
-                    <WrapItem key={index}>
-                        <HStack border={'1px'} w={"md"} h={"full"} borderRadius={20} p={5} bgColor={"white"}>
-                            <Text>{tecnologia.tecnologia}</Text>
-                            <Icon as={tecnologia.icono} w={8} h={8} />
-                        </HStack>
-                    </WrapItem>
-                ))}
+                <Iconos icon={FaNodeJs} tecnologia="NodeJS" />
+                <Iconos icon={SiJavascript} tecnologia="JavaScript" />
+                <Iconos icon={FaReact} tecnologia="React" />
+                <Iconos icon={SiNextdotjs} tecnologia="NextJS" />
+                <Iconos icon={SiChakraui} tecnologia="ChakraUI" />
+                <Iconos icon={SiExpress} tecnologia="Express" />
+                <Iconos icon={FaGitAlt} tecnologia="Git" />
+                <Iconos icon={FaGithub} tecnologia="GitHub" />
+                <Iconos icon={FaPhp} tecnologia="PHP" />
+                <Iconos icon={FaHtml5} tecnologia="HTML" />
+                <Iconos icon={FaCss3} tecnologia="CSS" />
+                <Iconos icon={SiMongodb} tecnologia="MongoDB" />
+                <Iconos icon={SiMysql} tecnologia="MySQL" />
             </Wrap>
         </VStack >
     )
