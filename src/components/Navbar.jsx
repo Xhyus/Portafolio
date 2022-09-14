@@ -1,39 +1,14 @@
 import React from 'react'
-import { Box, Link, HStack, ChakraProvider, VStack, Drawer, DrawerOverlay, DrawerContent, Text, DrawerCloseButton, useMediaQuery, Stack, useDisclosure, Container, DrawerHeader, DrawerBody } from "@chakra-ui/react"
+import { Box, Link, HStack, Flex, VStack, Drawer, DrawerOverlay, DrawerContent, Text, DrawerCloseButton, useMediaQuery, Stack, useDisclosure, Container, DrawerHeader, DrawerBody } from "@chakra-ui/react"
 import { FaBars } from 'react-icons/fa'
 
 const Navbar = () => {
 
     const [isMobile] = useMediaQuery("(max-width: 600px)")
-    // const currentPage = (boton) => {
-    //     if ( === 'asambleas' && boton === 'asambleas') {
-    //         return "orange"
-    //     } else {
-    //         if (path[1] === 'rendicion_cuentas' && boton === 'rendicion_cuentas') {
-    //             return "orange"
-    //         } else {
-    //             return "white"
-    //         }
-    //     }
-    // }
-
-    console.log(window.location.href)
-
-    // const currentPageMobile = (boton) => {
-    //     if (path[1] === 'asambleas' && boton === 'asambleas') {
-    //         return "orange"
-    //     } else {
-    //         if (path[1] === 'rendicion_cuentas' && boton === 'rendicion_cuentas') {
-    //             return "orange"
-    //         } else {
-    //             return "black"
-    //         }
-    //     }
-    // }
 
     const desk = () => {
         return (
-            <Box backgroundColor={"blackAlpha.900"} verticalAlign={"center"}>
+            <Flex backgroundColor={"blackAlpha.900"} verticalAlign={"center"} pos={"fixed"} position="sticky">
                 <HStack justify={"space-evenly"} ml={5} mr={5}>
                     <Text color={"white"} fontWeight={"bold"}>Ignacio González</Text>
                     <HStack align={"center"} p={5} justify={"center"}>
@@ -41,7 +16,7 @@ const Navbar = () => {
                         <Link color={"white"} px={1} fontWeight={"bold"} href={"#Tecnologias"}  >Tecnologias</Link>
                     </HStack>
                 </HStack>
-            </Box>
+            </Flex>
 
         )
     }

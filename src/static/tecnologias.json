@@ -1,0 +1,46 @@
+[
+    {
+        "tecnologia": "React",
+        "icono": "fa-react"
+    },
+    {
+        "tecnologia": "Node",
+        "icono": "fab fa-node"
+    },
+    {
+        "tecnologia": "MongoDB",
+        "icono": "fas fa-database"
+    },
+    {
+        "tecnologia": "Git",
+        "icono": "fab fa-git"
+    },
+    {
+        "tecnologia": "HTML",
+        "icono": "fab fa-html5"
+    },
+    {
+        "tecnologia": "CSS",
+        "icono": "fab fa-css3-alt"
+    },
+    {
+        "tecnologia": "Javascript",
+        "icono": "fab fa-js-square"
+    },
+    {
+        "tecnologia": "Javascript",
+        "icono": "fab fa-js-square"
+    },
+    {
+        "tecnologia": "Javascript",
+        "icono": "fab fa-js-square"
+    },
+    {
+        "tecnologia": "Javascript",
+        "icono": "fab fa-js-square"
+    },
+    {
+        "tecnologia": "Javascript",
+        "icono": "fab fa-js-square"
+    }
+]
