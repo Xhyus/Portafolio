@@ -6,12 +6,12 @@ const Navbar = () => {
 
     const [isMobile] = useMediaQuery("(max-width: 600px)")
 
-    const desk = () => {
+    const Desk = () => {
         return (
-            <Flex backgroundColor={"blackAlpha.900"} verticalAlign={"center"} pos={"fixed"} position="sticky">
-                <HStack justify={"space-evenly"} ml={5} mr={5}>
+            <Flex backgroundColor={"blackAlpha.900"} verticalAlign={"center"} justify="space-evenly">
+                <HStack ml={5} mr={5}>
                     <Text color={"white"} fontWeight={"bold"}>Ignacio González</Text>
-                    <HStack align={"center"} p={5} justify={"center"}>
+                    <HStack align={"center"} p={5}>
                         <Link color={"white"} px={1} fontWeight={"bold"} href={"#Sobre-mi"} >Sobre mí</Link>
                         <Link color={"white"} px={1} fontWeight={"bold"} href={"#Educacion"} >Educación</Link>
                         <Link color={"white"} px={1} fontWeight={"bold"} href={"#Experiencias"} >Experiencias</Link>
@@ -32,7 +32,7 @@ const Navbar = () => {
         return (
             <>
                 <Box backgroundColor={"blackAlpha.900"} p={1}>
-                    <Box m={5} borderColor={"whiteAlpha.700"} backgroundColor={"blackAlpha.900"}>
+                    <Box m={5} backgroundColor={"blackAlpha.900"}>
                         <FaBars color='white' size={30} ref={btnRef} onClick={onOpen} />
                     </Box>
                     <Drawer isOpen={isOpen} placement='right' onClose={onClose} finalFocusRef={btnRef}>
@@ -44,8 +44,12 @@ const Navbar = () => {
                             </DrawerHeader>
                             <DrawerBody justifyContent={"center"}>
                                 <VStack>
-                                    <Link color={"white"} fontWeight={"bold"} href={"#Sobre-mi"} >Sobre mí</Link>
-                                    <Link color={"white"} fontWeight={"bold"} href={"#Tecnologias"} >Tecnologias</Link>
+                                    <Link color={"white"} px={1} fontWeight={"bold"} href={"#Sobre-mi"} >Sobre mí</Link>
+                                    <Link color={"white"} px={1} fontWeight={"bold"} href={"#Educacion"} >Educación</Link>
+                                    <Link color={"white"} px={1} fontWeight={"bold"} href={"#Experiencias"} >Experiencias</Link>
+                                    <Link color={"white"} px={1} fontWeight={"bold"} href={"#Tecnologias"}  >Tecnologias</Link>
+                                    <Link color={"white"} px={1} fontWeight={"bold"} href={"#Proyectos"}  >Proyectos</Link>
+                                    <Link color={"white"} px={1} fontWeight={"bold"} href={"#Contacto"}  >Contacto</Link>
                                 </VStack>
                             </DrawerBody>
                         </DrawerContent>
@@ -56,7 +60,7 @@ const Navbar = () => {
     }
 
     return (
-        isMobile ? <DrawerMobile /> : desk()
+        isMobile ? <DrawerMobile /> : <Desk />
     )
 }
 
