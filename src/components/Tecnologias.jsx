@@ -1,7 +1,7 @@
 import React from 'react'
 import { VStack, Heading, Wrap, WrapItem, Icon, Link, Image } from '@chakra-ui/react'
 import { FaReact, FaNodeJs, FaGitAlt, FaPhp, FaCss3, FaHtml5, FaGithub } from 'react-icons/fa'
-import { SiNextdotjs, SiExpress, SiMongodb, SiMysql, SiChakraui, SiJavascript, SiPostgresql, SiInsomnia, SiVisualstudiocode, SiMongoose } from 'react-icons/si'
+import { SiNextdotjs, SiExpress, SiMongodb, SiMysql, SiChakraui, SiJavascript, SiPostgresql, SiInsomnia, SiVisualstudiocode } from 'react-icons/si'
 import { TbBrandReactNative } from 'react-icons/tb'
 
 const Iconos = ({ icon, url, tecnologia }) => {

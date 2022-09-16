@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Link, HStack, Flex, VStack, Drawer, DrawerOverlay, DrawerContent, Text, DrawerCloseButton, useMediaQuery, Stack, useDisclosure, Container, DrawerHeader, DrawerBody } from "@chakra-ui/react"
+import { Box, Link, HStack, Flex, VStack, Drawer, DrawerOverlay, DrawerContent, Text, DrawerCloseButton, useMediaQuery, useDisclosure, DrawerHeader, DrawerBody } from "@chakra-ui/react"
 import { FaBars } from 'react-icons/fa'
 
 const Navbar = () => {
