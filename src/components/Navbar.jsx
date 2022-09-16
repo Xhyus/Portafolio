@@ -13,7 +13,12 @@ const Navbar = () => {
                     <Text color={"white"} fontWeight={"bold"}>Ignacio González</Text>
                     <HStack align={"center"} p={5} justify={"center"}>
                         <Link color={"white"} px={1} fontWeight={"bold"} href={"#Sobre-mi"} >Sobre mí</Link>
+                        <Link color={"white"} px={1} fontWeight={"bold"} href={"#Educacion"} >Educación</Link>
+                        <Link color={"white"} px={1} fontWeight={"bold"} href={"#Experiencias"} >Experiencias</Link>
                         <Link color={"white"} px={1} fontWeight={"bold"} href={"#Tecnologias"}  >Tecnologias</Link>
+                        <Link color={"white"} px={1} fontWeight={"bold"} href={"#Proyectos"}  >Proyectos</Link>
+                        <Link color={"white"} px={1} fontWeight={"bold"} href={"#Contacto"}  >Contacto</Link>
+
                     </HStack>
                 </HStack>
             </Flex>

@@ -4,8 +4,8 @@ import CardEducacion from './Cards/CardEducacion'
 
 const Educacion = () => {
     return (
-        <VStack>
-            <Heading color={"white"} p={5}>Educación</Heading>
+        <VStack id='Educacion'>
+            <Heading as={"h2"} color={"white"} p={5} fontSize={"2xl"}>Educación</Heading>
             <Wrap spacing={10} justify={"center"}>
                 <WrapItem>
                     <CardEducacion logo={'https://www.salesianoconcepcion.cl/images/2018/06/07/insignia-colegio-fondo-transparente.png'} empresa={'Colegio Salesiano Concepción'} descripcion={'Técnico en Electrónica'} ingreso="2015" egreso="2018" />

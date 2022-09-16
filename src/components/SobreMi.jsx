@@ -7,7 +7,7 @@ import { FaLinkedin, FaGithub } from 'react-icons/fa'
 const SobreMi = () => {
     return (
         <>
-            <Heading as={"h1"} fontSize={"4xl"} color={"white"} textAlign="center">Ignacio González</Heading>
+            <Heading as={"h1"} id="Sobre-Mi" fontSize={"5xl"} color={"white"} textAlign="center" pb={10}>Ignacio González</Heading>
             <HStack>
                 <Stack textAlign={"center"} mr={10}>
                     <Image src={foto} width={500} borderRadius={'full'} border={'2px'} borderColor={'gray.300'} alt="Segun Adebayo" />
@@ -18,7 +18,7 @@ const SobreMi = () => {
                     </HStack>
                 </Stack>
                 <Box>
-                    <Heading as={"h2"} fontSize={"2xl"} color={"white"}>Sobre mí</Heading>
+                    <Heading as={"h2"} fontSize={"2xl"} color={"white"} pb="5">Sobre mí</Heading>
                     <Stack textAlign={'justify'}>
                         <Text fontWeight={"semibold"} color={"white"}>Estudiante de último semestre de Ingeniería en Ejecución Informática de la Universidad del Bío-Bío, con ganas de siempre aprender algo nuevo o mejorando las cosas que sé, entusiasta, autodidacta y analítico.</Text>
                         <Text fontWeight={"semibold"} color={"white"}>Mi enseñanza media la hice en el Colegio Salesiano Concepción, donde obtuve mi primer título técnico sobre Electrónica.</Text>

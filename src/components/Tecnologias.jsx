@@ -22,7 +22,7 @@ const Iconos = ({ icon, url, tecnologia }) => {
 const Tecnologias = () => {
     return (
         <VStack id='Tecnologias'>
-            <Heading fontWeight={"bold"} color="white" textAlign={"center"} p={5}>Tecnologías</Heading>
+            <Heading as={"h2"} fontSize={"2xl"} fontWeight={"bold"} color="white" textAlign={"center"} p={5}>Tecnologías</Heading>
             <Wrap>
                 <Iconos icon={FaNodeJs} tecnologia="NodeJS" url="https://nodejs.org/dist/latest-v16.x/docs/api/" />
                 <Iconos icon={SiJavascript} tecnologia="JavaScript" url="https://devdocs.io/javascript/" />
@@ -39,7 +39,7 @@ const Tecnologias = () => {
                 <Iconos icon={FaHtml5} tecnologia="HTML" url="https://developer.mozilla.org/es/docs/Web/HTML" />
                 <Iconos icon={FaCss3} tecnologia="CSS" url="https://developer.mozilla.org/es/docs/Web/CSS" />
             </Wrap>
-            <Heading fontWeight={"bold"} color="white" textAlign={"center"} p={5}>Herramientas</Heading>
+            <Heading as={"h2"} fontWeight={"bold"} color="white" textAlign={"center"} p={5} fontSize={"2xl"}>Herramientas</Heading>
             <Wrap>
                 <Iconos icon={FaGitAlt} tecnologia="Git" url="https://git-scm.com/docs" />
                 <Iconos icon={FaGithub} tecnologia="GitHub" url="https://docs.github.com/es" />
