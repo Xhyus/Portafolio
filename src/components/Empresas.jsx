@@ -1,15 +1,40 @@
 import React from 'react'
-import { Text, HStack, VStack, Image, Heading } from '@chakra-ui/react'
+import { HStack, VStack, Heading, WrapItem, Wrap } from '@chakra-ui/react'
+import experiencias from '../static/experiencias.json'
+import CardEmpresas from './Cards/CardEmpresas'
 
-const Empresas = ({ logo, empresa, descripcion }) => {
+const Empresas = () => {
+    const experienciasDestacables = experiencias[0].experienciasDestacables.map((experiencia, index) => {
+        return (
+            <WrapItem>
+                <CardEmpresas key={index} logo={experiencia.logo} empresa={experiencia.empresa} descripcion={experiencia.descripcion} />
+            </WrapItem>
+        )
+    })
+
+    const trabajosFormales = experiencias[1].trabajosFormales.map((experiencia, index) => {
+        return (
+            <WrapItem>
+                <CardEmpresas key={index} logo={experiencia.logo} empresa={experiencia.empresa} descripcion={experiencia.descripcion} />
+            </WrapItem>
+        )
+    })
+
     return (
-        <HStack border={'1px'} w={"md"} h={"full"} borderRadius={20} p={5} bgColor={"white"}>
-            <VStack pr={5}>
-                <Heading fontWeight={"bold"}>{empresa}</Heading>
-                <Text >{descripcion}</Text>
-            </VStack>
-            <Image src={logo} w={150} alt="Logo" />
-        </HStack>
+        <VStack justify={"center"}>
+            <Heading textAlign={"center"} color="white" p={5}>Experiencia Destacables</Heading>
+            <HStack w={'full'} h={"full"} mt={5}>
+                <Wrap spacing={10} justify={"center"}>
+                    {experienciasDestacables}
+                </Wrap>
+            </HStack>
+            <Heading color={"white"} textAlign={"center"} p={5}>Trabajos Formales</Heading>
+            <HStack w={'full'} mt={5} h={"full"}>
+                <Wrap>
+                    {trabajosFormales}
+                </Wrap>
+            </HStack>
+        </VStack>
     )
 }
 
