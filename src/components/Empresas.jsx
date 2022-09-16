@@ -21,16 +21,16 @@ const Empresas = () => {
     })
 
     return (
-        <VStack justify={"center"}>
+        <VStack justify={"center"} my={10} w={'full'} id={"Experiencias"}>
             <Heading textAlign={"center"} color="white" p={5}>Experiencia Destacables</Heading>
-            <HStack w={'full'} h={"full"} mt={5}>
+            <HStack w={'full'} h={"full"} mt={5} justify={"center"}>
                 <Wrap spacing={10} justify={"center"}>
                     {experienciasDestacables}
                 </Wrap>
             </HStack>
             <Heading color={"white"} textAlign={"center"} p={5}>Trabajos Formales</Heading>
-            <HStack w={'full'} mt={5} h={"full"}>
-                <Wrap>
+            <HStack w={'full'} mt={5} h={"full"} justify={"center"}>
+                <Wrap justify={"center"} spacing={10}>
                     {trabajosFormales}
                 </Wrap>
             </HStack>
