@@ -6,16 +6,16 @@ import CardEmpresas from './Cards/CardEmpresas'
 const Empresas = () => {
     const experienciasDestacables = experiencias[0].experienciasDestacables.map((experiencia, index) => {
         return (
-            <WrapItem>
-                <CardEmpresas key={index} logo={experiencia.logo} empresa={experiencia.empresa} descripcion={experiencia.descripcion} />
+            <WrapItem key={index}>
+                <CardEmpresas logo={experiencia.logo} empresa={experiencia.empresa} descripcion={experiencia.descripcion} size={experiencia.size} periodo={experiencia.periodo} />
             </WrapItem>
         )
     })
 
     const trabajosFormales = experiencias[1].trabajosFormales.map((experiencia, index) => {
         return (
-            <WrapItem>
-                <CardEmpresas key={index} logo={experiencia.logo} empresa={experiencia.empresa} descripcion={experiencia.descripcion} />
+            <WrapItem key={index}>
+                <CardEmpresas logo={experiencia.logo} empresa={experiencia.empresa} descripcion={experiencia.descripcion} size={experiencia.size} periodo={experiencia.periodo} />
             </WrapItem>
         )
     })

@@ -1,5 +1,5 @@
 import React from 'react'
-import { Box, Link, HStack, Flex, VStack, Stack, Drawer, DrawerOverlay, DrawerContent, Text, DrawerCloseButton, useMediaQuery, useDisclosure, DrawerHeader, DrawerBody } from "@chakra-ui/react"
+import { Box, Link, HStack, Flex, Stack, Drawer, DrawerOverlay, DrawerContent, Text, DrawerCloseButton, useMediaQuery, useDisclosure, DrawerHeader, DrawerBody } from "@chakra-ui/react"
 import { FaBars } from 'react-icons/fa'
 
 const Navbar = () => {
@@ -15,7 +15,7 @@ const Navbar = () => {
                         <Link color={"white"} px={1} fontWeight={"bold"} href={"#Sobre-mi"} >Sobre mí</Link>
                         <Link color={"white"} px={1} fontWeight={"bold"} href={"#Educacion"} >Educación</Link>
                         <Link color={"white"} px={1} fontWeight={"bold"} href={"#Experiencias"} >Experiencias</Link>
-                        <Link color={"white"} px={1} fontWeight={"bold"} href={"#Tecnologias"}  >Tecnologias</Link>
+                        <Link color={"white"} px={1} fontWeight={"bold"} href={"#Tecnologias"}  >Tecnologías</Link>
                         <Link color={"white"} px={1} fontWeight={"bold"} href={"#Proyectos"}  >Proyectos</Link>
                         <Link color={"white"} px={1} fontWeight={"bold"} href={"#Contacto"}  >Contacto</Link>
                     </HStack>
@@ -27,14 +27,13 @@ const Navbar = () => {
 
     const DrawerMobile = () => {
         const { isOpen, onOpen, onClose } = useDisclosure()
-        const btnRef = React.useRef()
         return (
             <>
                 <Box backgroundColor={"blackAlpha.900"} p={1}>
                     <Box m={5}>
-                        <FaBars color='white' size={30} ref={btnRef} onClick={onOpen} />
+                        <FaBars color='white' size={30} onClick={onOpen} />
                     </Box>
-                    <Drawer isOpen={isOpen} placement='right' onClose={onClose} finalFocusRef={btnRef}>
+                    <Drawer isOpen={isOpen} placement='right' onClose={onClose} >
                         <DrawerOverlay />
                         <DrawerContent backgroundColor={"blackAlpha.800"}>
                             <DrawerCloseButton color={"white"} />
@@ -48,7 +47,7 @@ const Navbar = () => {
                                     <Link color={"white"} px={1} fontWeight={"bold"} href={"#Experiencias"} >Experiencias</Link>
                                     <Link color={"white"} px={1} fontWeight={"bold"} href={"#Tecnologias"}  >Tecnologias</Link>
                                     <Link color={"white"} px={1} fontWeight={"bold"} href={"#Proyectos"}  >Proyectos</Link>
-                                    <Link color={"white"} px={1} fontWeight={"bold"} href={"#Contacto"}  >Contacto</Link>
+                                    {/* <Link color={"white"} px={1} fontWeight={"bold"} href={"#Contacto"}  >Contacto</Link> */}
                                 </Stack>
                             </DrawerBody>
                         </DrawerContent>

@@ -4,12 +4,16 @@
             {
                 "empresa": "Pryx",
                 "descripcion": "Practica Profesional I desarrollando páginas web",
-                "logo": "https://fpymebiobio.cl/wp-content/uploads/2022/05/Pryx-logo-b.png"
+                "logo": "https://fpymebiobio.cl/wp-content/uploads/2022/05/Pryx-logo-b.png",
+                "size": "50%",
+                "periodo": "Junio 2021 - Septiembre 2021"
             },
             {
                 "empresa": "Pryx",
-                "descripcion": "Practica Profesional II desarrollando páginas web y aplicaciones moviles",
-                "logo": "https://fpymebiobio.cl/wp-content/uploads/2022/05/Pryx-logo-b.png"
+                "descripcion": "Practica Profesional II desarrollando páginas web y aplicaciones móviles",
+                "logo": "https://fpymebiobio.cl/wp-content/uploads/2022/05/Pryx-logo-b.png",
+                "size": "50%",
+                "periodo": "Enero 2022 - Marzo 2022"
             }
         ]
     },
@@ -18,17 +22,23 @@
             {
                 "empresa": "MIBO",
                 "descripcion": "Apoyo en certificaciones para empresas y que estas puedan emitir boletas mediante SII",
-                "logo": "https://mibo.cl/homepage/images/mibo.png"
+                "logo": "https://mibo.cl/homepage/images/mibo.png",
+                "size": "30%",
+                "periodo": "Mayo 2020 - Febrero 2021"
             },
             {
                 "empresa": "UBB",
-                "descripcion": "Ayudantias para Ingeniería Civil Informática en la asignatura de Ingeniería de Software",
-                "logo": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Escudo_Universidad_del_B%C3%ADo-B%C3%ADo.png"
+                "descripcion": "Ayudantías para Ingeniería Civil Informática en la asignatura de Ingeniería de Software",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Escudo_Universidad_del_B%C3%ADo-B%C3%ADo.png",
+                "size": "40%",
+                "periodo": "Abril 2022 - Agosto 2022"
             },
             {
                 "empresa": "UBB",
-                "descripcion": "Ayudantias para Ingeniería Ejecución Informática en la asignatura de Ingeniería de Software",
-                "logo": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Escudo_Universidad_del_B%C3%ADo-B%C3%ADo.png"
+                "descripcion": "Ayudantías para Ingeniería Ejecución Informática en la asignatura de Ingeniería de Software",
+                "logo": "https://upload.wikimedia.org/wikipedia/commons/a/a2/Escudo_Universidad_del_B%C3%ADo-B%C3%ADo.png",
+                "size": "40%",
+                "periodo": "Septiembre 2022 - Enero 2023"
             }
         ]
     }

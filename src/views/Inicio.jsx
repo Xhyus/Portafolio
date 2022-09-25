@@ -6,6 +6,7 @@ import Educacion from '../components/Educacion'
 import SobreMi from '../components/SobreMi'
 import Proyectos from '../components/Proyectos'
 import Idiomas from '../components/Idiomas'
+import Contacto from '../components/Contacto'
 
 const Inicio = () => {
     return (
@@ -16,6 +17,7 @@ const Inicio = () => {
             <Idiomas />
             <Tecnologias />
             <Proyectos />
+            {/* <Contacto /> */}
         </Container >
     )
 }

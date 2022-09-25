@@ -1,13 +1,13 @@
 import React from 'react'
-import { Box, Flex, Heading, HStack, Image, Link, Stack, Text } from '@chakra-ui/react'
-import foto from '../static/image.jpeg'
+import { Heading, HStack, Image, Link, Stack, Text } from '@chakra-ui/react'
+import foto from '../static/yo.jpeg'
 import { FaLinkedin, FaGithub } from 'react-icons/fa'
 
 
 const SobreMi = () => {
     return (
         <Stack w={"full"}>
-            <Heading as={"h1"} id="Sobre-Mi" fontSize={{ base: "4xl", md: "5xl" }} color={"white"} textAlign="center" pb={10}>Ignacio González</Heading>
+            <Heading as={"h1"} id="Sobre-mi" fontSize={{ base: "4xl", md: "5xl" }} color={"white"} textAlign="center" pb={10}>Ignacio González</Heading>
             <HStack flexWrap={{ base: "wrap", md: "nowrap" }}>
                 <Stack textAlign={"center"} mr={{ base: "0", md: 10 }} w={{ base: "full", md: "40%" }} pb={{ base: "5", md: 0 }} >
                     <Image src={foto} width={{ base: "70%", md: "70%" }} alignSelf="center" borderRadius={'full'} border={'2px'} borderColor={'gray.300'} alt="Foto de Ignacio González" />

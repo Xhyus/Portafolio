@@ -22,7 +22,7 @@ const CardProyectos = ({ imagen, descripcion, titulo, tecnologias, repositorio, 
                 </Wrap>
                 <HStack p={5}>
                     <Link mr={5} href={repositorio} isExternal><FaGithub size={40} /></Link>
-                    <Link href={url} bgColor={"green.500"} color={"white"} p={2} borderRadius={10} fontWeight={'semibold'} fontSize={"2xl"} isExternal>Ir a la demo</Link>
+                    <Link href={url} bgColor={"blue.500"} _hover={{ bgColor: "blue.600", color: "white" }} color={"white"} p={2} borderRadius={10} fontWeight={'semibold'} fontSize={"2xl"} isExternal>Ir a la demo</Link>
                 </HStack>
             </Stack>
         </>
