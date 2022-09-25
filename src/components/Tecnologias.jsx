@@ -3,7 +3,6 @@ import { VStack, Heading, Wrap, WrapItem, Icon, Link } from '@chakra-ui/react'
 import { FaReact, FaNodeJs, FaGitAlt, FaPhp, FaCss3, FaHtml5, FaGithub } from 'react-icons/fa'
 import { SiNextdotjs, SiExpress, SiMongodb, SiMysql, SiChakraui, SiJavascript, SiPostgresql, SiInsomnia, SiVisualstudiocode } from 'react-icons/si'
 import { TbBrandReactNative } from 'react-icons/tb'
-// import { MongooseJS } from './icons/customIcons'
 
 const Iconos = ({ icon, url, tecnologia, color }) => {
     if (tecnologia === 'Mongoose') {
@@ -36,7 +35,6 @@ const Tecnologias = () => {
                 <Iconos icon={TbBrandReactNative} tecnologia="React Native" url="https://reactnative.dev/docs/next/components-and-apis" color={"purple.500"} />
                 <Iconos icon={SiChakraui} tecnologia="ChakraUI" url="https://chakra-ui.com/docs/getting-started" color={"teal.500"} />
                 <Iconos icon={SiExpress} tecnologia="Express" url="https://expressjs.com/es/api.html" color={"red.500"} />
-                {/* <Iconos icon={MongooseJS} size={60} tecnologia="Mongoose" url="https://mongoosejs.com/docs/api.html" /> */}
                 <Iconos icon={SiMongodb} tecnologia="MongoDB" url="https://docs.mongodb.com/" color={"green.500"} />
                 <Iconos icon={SiMysql} tecnologia="MySQL" url="https://dev.mysql.com/doc/" color={"blue.500"} />
                 <Iconos icon={SiPostgresql} tecnologia="PostgreSQL" url="https://www.postgresql.org/docs/" color={"blue.500"} />

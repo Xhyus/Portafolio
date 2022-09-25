@@ -12,8 +12,8 @@ const Inicio = () => {
         <Container maxW={"container.lg"} py={20}>
             <SobreMi />
             <Educacion />
-            <Idiomas />
             <Empresas />
+            <Idiomas />
             <Tecnologias />
             <Proyectos />
         </Container >
