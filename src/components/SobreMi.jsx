@@ -22,7 +22,7 @@ const SobreMi = () => {
                     <Stack textAlign={'justify'}>
                         <Text fontWeight={"semibold"} color={"white"}>Estudiante de último semestre de Ingeniería en Ejecución Informática de la Universidad del Bío-Bío, con ganas de siempre aprender algo nuevo o mejorando las cosas que sé, entusiasta, autodidacta y analítico.</Text>
                         <Text fontWeight={"semibold"} color={"white"}>Me gusta mucho el desarrollo web, puedo programar en frontend, backend y quiero aprender cosas nuevas.</Text>
-                        <Text fontWeight={"semibold"} color={"white"}>Actualmente me encuentro trabajando en el desarrollo de una aplicación web para la gestión de las tareas diarias de un CEE, utilizando NextJS, NodeJS, Express, Mongoose(MongoDB) y ChakraUI.</Text>
+                        <Text fontWeight={"semibold"} color={"white"}>Actualmente me encuentro trabajando en el desarrollo de una plataforma web para realizar cotizaciones de forma sencilla para una empresa, utilizando NextJS, NodeJS, Express, Mongoose(MongoDB) y ChakraUI.</Text>
                     </Stack>
                 </Stack>
             </HStack>
