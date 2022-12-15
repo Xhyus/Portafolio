@@ -21,7 +21,7 @@ const CardProyectos = ({ imagen, descripcion, titulo, tecnologias, repositorio, 
                     })}
                 </Wrap>
                 <HStack p={5}>
-                    <Link mr={5} href={repositorio} isExternal><FaGithub size={40} /></Link>
+                    {repositorio.length !== 0 ? <Link mr={5} href={repositorio} isExternal><FaGithub size={40} /></Link> : <FaGithub size={40} mr={5} color={"#9b9b9b"} />}
                     {url.length !== 0 ? <Link href={url} isExternal><Button colorScheme={'blue'}>Ver demo</Button></Link> : <Button colorScheme={'blue'} disabled>Ver demo</Button>}
                 </HStack>
             </Stack>

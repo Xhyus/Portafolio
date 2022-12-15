@@ -1,6 +1,7 @@
 import portafolio from '../static/portafolio.png'
 import authapp from '../static/auth-app.png'
 import ceewebapp from '../static/ceewebapp.png'
+import cotizaciones from '../static/cotizaciones.png'
 
 export const proyectos = [
     {
@@ -32,6 +33,7 @@ export const proyectos = [
             "Git",
             "GitHub",
             "Visual Studio Code",
+            "Insomnia"
         ],
         "repositorio": "https://github.com/Xhyus/Auth_cookies",
         "url": ""
@@ -50,8 +52,29 @@ export const proyectos = [
             "Git",
             "GitHub",
             "Visual Studio Code",
+            "Insomnia"
         ],
         "repositorio": "https://github.com/Xhyus/ceewebapp",
         "url": ""
     },
+    {
+        "imagen": cotizaciones,
+        "descripcion": "Proyecto desarrollado para la empresa Estudio Fragua, la cual consiste en una plataforma para cotizar proyectos en base a los servicios que tienen disponibles",
+        "titulo": "Plataforma de cotizaciones",
+        "tecnologias": [
+            "Next.JS",
+            "ChakraUI",
+            "JavaScript",
+            "Express",
+            "Mongoose",
+            "MongoDB",
+            "Git",
+            "GitHub",
+            "Visual Studio Code",
+            "Insomnia"
+        ],
+        "repositorio": "",
+        "url": ""
+    },
+
 ]
