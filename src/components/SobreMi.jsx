@@ -16,7 +16,7 @@ const SobreMi = () => {
                         <Link href='https://www.linkedin.com/in/ignacio-gonz%C3%A1lez-468359218/' isExternal><FaLinkedin size={30} color={'white'} /></Link>
                         <Link href='https://github.com/Xhyus' isExternal _hover={{ color: "black" }} ><FaGithub size={30} color={'white'} /></Link>
                     </HStack>
-                    <Link href={'/CV.pdf'} color={'white'} isExternal><Button color={'white'} colorScheme={'yellow'}>Ver CV</Button></Link>
+                    <Link href={'/CV.pdf'} color={'white'} isExternal><Button color={'white'} w="full" colorScheme={'blue'}>Ver Curriculum</Button></Link>
                 </Stack>
                 <Stack w={{ base: "full", md: "60%" }}>
                     <Heading as={"h2"} fontSize={"2xl"} textAlign={{ base: "center", md: "start" }} color={"white"} pb="5">Sobre mí</Heading>
