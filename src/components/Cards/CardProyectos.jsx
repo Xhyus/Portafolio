@@ -1,5 +1,5 @@
 import React from 'react'
-import { HStack, VStack, Heading, WrapItem, Wrap, Text, Image, Link, Tag, Stack } from '@chakra-ui/react'
+import { HStack, VStack, Heading, WrapItem, Wrap, Text, Image, Link, Tag, Stack, Button } from '@chakra-ui/react'
 import { FaGithub } from 'react-icons/fa'
 
 const CardProyectos = ({ imagen, descripcion, titulo, tecnologias, repositorio, url }) => {
@@ -22,7 +22,7 @@ const CardProyectos = ({ imagen, descripcion, titulo, tecnologias, repositorio, 
                 </Wrap>
                 <HStack p={5}>
                     <Link mr={5} href={repositorio} isExternal><FaGithub size={40} /></Link>
-                    <Link href={url} bgColor={"blue.500"} _hover={{ bgColor: "blue.600", color: "white" }} color={"white"} p={2} borderRadius={10} fontWeight={'semibold'} fontSize={"2xl"} isExternal>Ir a la demo</Link>
+                    {url === "unset" ? <Link href={url} isExternal><Button colorScheme={'blue'}>Ver demo</Button></Link> : <Button colorScheme={'blue'} disabled>Ver demo</Button>}
                 </HStack>
             </Stack>
         </>
