@@ -8,7 +8,7 @@ const Proyectos = () => {
     const listadoProyectos = proyectos.map((proyecto, index) => {
         return (
             <WrapItem key={index}>
-                <CardProyectos imagen={proyecto.imagen} titulo={proyecto.titulo} descripcion={proyecto.descripcion} link={proyecto.url} tecnologias={proyecto.tecnologias} />
+                <CardProyectos imagen={proyecto.imagen} titulo={proyecto.titulo} descripcion={proyecto.descripcion} url={proyecto.url} tecnologias={proyecto.tecnologias} repositorio={proyecto.repositorio} />
             </WrapItem>
         )
     })

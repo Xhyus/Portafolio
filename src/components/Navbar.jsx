@@ -17,7 +17,6 @@ const Navbar = () => {
                         <Link color={"white"} px={1} fontWeight={"bold"} href={"#Experiencias"} >Experiencias</Link>
                         <Link color={"white"} px={1} fontWeight={"bold"} href={"#Tecnologias"}  >Tecnologías</Link>
                         <Link color={"white"} px={1} fontWeight={"bold"} href={"#Proyectos"}  >Proyectos</Link>
-                        <Link color={"white"} px={1} fontWeight={"bold"} href={"#Contacto"}  >Contacto</Link>
                     </HStack>
                 </HStack>
             </Flex>

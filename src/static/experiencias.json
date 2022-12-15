@@ -4,7 +4,7 @@
             {
                 "empresa": "Estudio Fragua",
                 "descripcion": "Proyecto de título enfocado en el desarrollo de una plataforma de cotizaciones. Este proyecto se esta desarrollando con el stack MERN y Chakra UI.",
-                "logo": "http://localhost:3000/fragua.png",
+                "logo": "http://ignaciogonzalez.dev/fragua.png",
                 "size": "70%",
                 "periodo": "Septiembre 2022 - Enero 2023"
             },

@@ -34,7 +34,7 @@ export const proyectos = [
             "Visual Studio Code",
         ],
         "repositorio": "https://github.com/Xhyus/Auth_cookies",
-        "url": "unset"
+        "url": ""
     },
     {
         "imagen": ceewebapp,
@@ -52,6 +52,6 @@ export const proyectos = [
             "Visual Studio Code",
         ],
         "repositorio": "https://github.com/Xhyus/ceewebapp",
-        "url": "unset"
+        "url": ""
     },
 ]
