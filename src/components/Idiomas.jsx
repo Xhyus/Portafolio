@@ -11,7 +11,7 @@ const Idiomas = () => {
             </HStack>
             <HStack>
                 <Image src="https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/1920px-Flag_of_the_United_Kingdom.svg.png" w={"50px"} alt="Bandera de Inglaterra" />
-                <Text color={"white"} fontWeight={"semibold"}>Inglés - <Link color={"orange.200"} _hover={{ color: "orange.300" }} href={"Linguaskill.pdf"} isExternal>Certificación Linguaskill</Link> (C1 Listening) (B2 Reading)</Text>
+                <Text color={"white"} fontWeight={"semibold"}>Inglés - <Link color={"orange.200"} _hover={{ color: "orange.300" }} href={"/Linguaskill.pdf"} isExternal>Certificación Linguaskill</Link> (C1 Listening) (B2 Reading)</Text>
             </HStack>
         </Stack>
     )
