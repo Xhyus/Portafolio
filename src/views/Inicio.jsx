@@ -1,7 +1,7 @@
 import { Container, } from '@chakra-ui/react'
 import Navbar from '../components/Navbar'
+import Conocimientos from '../components/Conocimientos'
 // import Empresas from '../components/Empresas'
-// import Tecnologias from '../components/Tecnologias'
 // import Educacion from '../components/Educacion'
 import SobreMi from '../components/SobreMi'
 // import Proyectos from '../components/Proyectos'
@@ -12,11 +12,12 @@ const Inicio = () => {
         <>
             <Navbar />
             <Container maxW={"container.xl"} py={20}>
+
                 <SobreMi />
+                <Conocimientos />
                 {/*<Educacion />
-            <Empresas />
             <Idiomas />
-            <Tecnologias />
+            <Empresas />
         <Proyectos /> */}
             </Container >
         </>

@@ -1,6 +1,6 @@
 import React from 'react'
 import { HStack, VStack, Heading, WrapItem, Wrap } from '@chakra-ui/react'
-import experiencias from '../static/experiencias.json'
+import experiencias from '../static/experiencias'
 import CardEmpresas from './Cards/CardEmpresas'
 
 const Empresas = () => {
