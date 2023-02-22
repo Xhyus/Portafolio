@@ -11,9 +11,9 @@ const Navbar = () => {
                 <Text fontSize="xl" color="white" fontWeight="bold">Ignacio González</Text>
                 <HStack>
                     <LinkButton href="#SobreMi" tag="Sobre Mí" />
-                    <LinkButton href="#Educacion" tag="Educación" />
+                    <LinkButton href="#Conocimientos" tag="Conocimientos" />
                     <LinkButton href="#Experiencias" tag="Experiencias" />
-                    <LinkButton href="#Tecnologias" tag="Tecnologías" />
+                    <LinkButton href="#Educacion" tag="Educación" />
                     <LinkButton href="#Proyectos" tag="Proyectos" />
                 </HStack>
             </Flex>
@@ -39,9 +39,9 @@ const Navbar = () => {
                             <DrawerBody>
                                 <Stack>
                                     <LinkButton href="#SobreMi" tag="Sobre Mí" />
-                                    <LinkButton href="#Educacion" tag="Educación" />
+                                    <LinkButton href="#Conocimientos" tag="Conocimientos" />
                                     <LinkButton href="#Experiencias" tag="Experiencias" />
-                                    <LinkButton href="#Tecnologias" tag="Tecnologías" />
+                                    <LinkButton href="#Educacion" tag="Educación" />
                                     <LinkButton href="#Proyectos" tag="Proyectos" />
                                 </Stack>
                             </DrawerBody>
