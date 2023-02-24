@@ -1,3 +1,4 @@
+import { ExternalLinkIcon } from "@chakra-ui/icons"
 import { Box, HStack, Text, Link } from "@chakra-ui/react"
 
 const Icono = ({ Icon, data, href }) => {
@@ -7,10 +8,10 @@ const Icono = ({ Icon, data, href }) => {
                 <Icon color="white" size="30" />
             </Box>
             {data === undefined ?
-                <Link href={href} fontSize="xl" isExternal>{href}</Link>
+                <Link style={{ display: "flex", gap: 5, alignItems: "center" }} href={href} fontSize="xl" isExternal>{href}<ExternalLinkIcon mx="2px" /></Link>
                 :
                 data && href ?
-                    <Link href={href} fontSize="xl" isExternal>{data}</Link>
+                    <Link style={{ display: "flex", gap: 5, alignItems: "center" }} href={href} fontSize="xl" isExternal>{data}<ExternalLinkIcon mx="2px" /></Link>
                     :
                     <Text fontSize="xl" color="black">{data}</Text>
             }

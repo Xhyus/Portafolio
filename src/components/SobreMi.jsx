@@ -1,4 +1,4 @@
-import { Box, Heading, HStack, Stack, Text, Wrap, WrapItem } from '@chakra-ui/react'
+import { Box, Heading, HStack, Link, Stack, Text, Wrap, WrapItem } from '@chakra-ui/react'
 import { FaLinkedin, FaGithub, FaPhoneAlt, FaEnvelope, FaGlobe, FaMapMarkerAlt } from "react-icons/fa"
 import { sobre_mi } from '../static/textos-estaticos'
 import SubTitulo from './generic_components/SubTitulo'
@@ -28,7 +28,10 @@ const SobreMi = () => {
                     </Box>
                 </WrapItem>
             </Wrap>
-            <Heading as={"h2"} fontSize="2xl" color={"black"} fontWeight="light" py={5}>Ing. Informático</Heading>
+            <HStack gap={5}>
+                <Heading as={"h2"} fontSize="2xl" color={"black"} fontWeight="light" py={5}>Ing. Informático</Heading>
+                <Link href={'/CV.pdf'} border="2px black solid" color="black" px={6} fontWeight="light" py={2} _hover={{ transform: "scale(1.1)", color: "black" }} isExternal>Ver Curriculum</Link>
+            </HStack>
             <SubTitulo type="h2" size="2xl" data="¿QUIÉN SOY?" />
             <Stack textAlign={'justify'}>
                 {sobre_mi.map((data, key) => {
@@ -40,14 +43,3 @@ const SobreMi = () => {
 }
 
 export default SobreMi
-
-
-{/* <Stack textAlign={"center"} mr={{ base: "0", md: 10 }} w={{ base: "full", md: "40%" }} pb={{ base: "5", md: 0 }} >
-                    <Image src={foto} width={{ base: "70%", md: "70%" }} alignSelf="center" borderRadius={'full'} border={'2px'} borderColor={'gray.300'} alt="Foto de Ignacio González" />
-                    <Text color={"white"} fontWeight={"bold"}>Desarrollador Web</Text>
-                    <HStack justify={"center"}>
-                        <Link href='https://www.linkedin.com/in/ignacio-gonz%C3%A1lez-468359218/' isExternal><FaLinkedin size={30} color={'white'} /></Link>
-                        <Link href='https://github.com/Xhyus' isExternal _hover={{ color: "black" }} ><FaGithub size={30} color={'white'} /></Link>
-                    </HStack>
-                    <Link href={'/CV.pdf'} color={'white'} isExternal><Button color={'white'} w="full" colorScheme={'blue'}>Ver Curriculum</Button></Link>
-                </Stack> */}
