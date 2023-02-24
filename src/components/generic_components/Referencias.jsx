@@ -1,10 +1,10 @@
-import { Box, Text } from "@chakra-ui/react"
+import { Box, Link, Text } from "@chakra-ui/react"
 
 
 const Referencias = ({ nombre, correo, telefono }) => {
     return (
         <Box bgColor="black" p={2}>
-            <Text color="white" fontWeight="light" textAlign="center">Para referencias contactarse con {nombre} - {correo} - {telefono}</Text>
+            <Text color="white" fontWeight="light" textAlign="center">Para referencias contactarse con {nombre} - <Link href={"mailto:" + correo}>{correo}</Link> - {telefono}</Text>
         </Box>
     )
 }
