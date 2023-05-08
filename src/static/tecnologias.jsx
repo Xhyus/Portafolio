@@ -1,6 +1,6 @@
 import { FaReact, FaNodeJs, FaGitAlt, FaPhp, FaCss3, FaHtml5, FaGithub, FaBootstrap, FaJava } from 'react-icons/fa'
-import { SiNextdotjs, SiExpress, SiMongodb, SiMysql, SiChakraui, SiJavascript, SiPostgresql, SiInsomnia, SiVisualstudiocode, SiDjango } from 'react-icons/si'
-import { TbBrandReactNative } from 'react-icons/tb'
+import { SiNextdotjs, SiExpress, SiMongodb, SiMysql, SiChakraui, SiJavascript, SiPostgresql, SiInsomnia, SiVisualstudiocode, SiDjango, SiJest } from 'react-icons/si'
+import { TbBrandReactNative, TbBrandTypescript, SiPostman } from 'react-icons/tb'
 
 export const frontend = [{
     icono: FaReact,
@@ -62,6 +62,12 @@ export const backend = [{
     tecnologia: "Django",
     color: "green.500",
     documentacion: "https://docs.djangoproject.com/en/3.2/"
+},
+{
+    icono: SiJest,
+    tecnologia: "Jest",
+    color: "red.500",
+    documentacion: "https://jestjs.io/docs/getting-started"
 }
 ]
 
@@ -88,7 +94,14 @@ export const herramientas = [{
     tecnologia: "Visual Studio Code",
     color: "blue.500",
     documentacion: "https://code.visualstudio.com/docs"
-}]
+},
+{
+    icono: SiPostman,
+    tecnologia: "Postman",
+    color: "orange.500",
+    documentacion: "https://learning.postman.com/docs/getting-started/introduction/"
+}
+]
 
 export const lenguajes = [{
     icono: FaPhp,
@@ -108,6 +121,12 @@ export const lenguajes = [{
     color: "red.500",
     documentacion: "https://docs.oracle.com/en/java/javase/16/docs/api/index.html"
 },
+{
+    icono: TbBrandTypescript,
+    tecnologia: "Typescript",
+    color: "blue.500",
+    documentacion: "https://www.typescriptlang.org/docs/"
+}
 ]
 
 export const base_datos = [{
