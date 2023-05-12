@@ -1,6 +1,6 @@
 import { FaReact, FaNodeJs, FaGitAlt, FaPhp, FaCss3, FaHtml5, FaGithub, FaBootstrap, FaJava } from 'react-icons/fa'
-import { SiNextdotjs, SiExpress, SiMongodb, SiMysql, SiChakraui, SiJavascript, SiPostgresql, SiInsomnia, SiVisualstudiocode, SiDjango, SiJest } from 'react-icons/si'
-import { TbBrandReactNative, TbBrandTypescript, SiPostman } from 'react-icons/tb'
+import { SiNextdotjs, SiExpress, SiMongodb, SiMysql, SiChakraui, SiJavascript, SiPostgresql, SiInsomnia, SiVisualstudiocode, SiDjango, SiJest,SiPostman } from 'react-icons/si'
+import { TbBrandReactNative, TbBrandTypescript  } from 'react-icons/tb'
 
 export const frontend = [{
     icono: FaReact,
